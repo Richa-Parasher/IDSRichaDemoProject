@@ -43,6 +43,8 @@ class InputViewController: UIViewController,UITextFieldDelegate , InputViewPicke
         self.getCurrentLocation()
         self.getAllCityNames()
         self.setupNaviagtionBarForInputViewController()
+        self.createInputAccessoryView()
+
     }
     
 
@@ -339,5 +341,26 @@ class InputViewController: UIViewController,UITextFieldDelegate , InputViewPicke
         self.cityTextField.resignFirstResponder()
     }
     
+    /*
+     @brief : method to create an accesory view for all keyboards
+     */
+    func createInputAccessoryView(){
+        let rect = CGRect(x: 10, y: 0, width: self.view.bounds.width, height: 40)
+        let inputAccView : UIView = UIView.init(frame:rect)
+        inputAccView.backgroundColor = UIColor.lightGray
+        inputAccView.alpha = 0.8
+        let btnDone : UIButton = UIButton.init(type: .custom)
+        btnDone.frame = CGRect(x: self.view.bounds.width - 80 , y: 0, width: 80, height: 40)
+        btnDone.setTitle("Done", for: .normal)
+        btnDone.backgroundColor = UIColor.gray
+        btnDone.addTarget(self, action: #selector(dismissKeyboard), for: .touchUpInside)
+        inputAccView.addSubview(btnDone)
+        self.startDateTextField.inputAccessoryView = inputAccView
+        self.endDateTextField.inputAccessoryView = inputAccView
+        self.guestTextField.inputAccessoryView = inputAccView
+        self.roomTextField.inputAccessoryView = inputAccView
+        self.cityTextField.inputAccessoryView = inputAccView
+    }
+
 
 }

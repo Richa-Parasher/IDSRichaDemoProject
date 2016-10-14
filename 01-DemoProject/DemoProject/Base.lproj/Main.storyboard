@@ -115,7 +115,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="295" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7iU-Rv-JZF" id="UJ9-dj-2B8">
-                                                    <frame key="frameInset" width="295" height="43"/>
+                                                    <frame key="frameInset" width="295" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </tableViewCellContentView>
                                             </tableViewCell>
@@ -321,10 +321,10 @@
                                 <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableViewCellIdentifier" rowHeight="44" id="sU1-Nu-lac">
-                                        <rect key="frame" x="0.0" y="28" width="139" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="198" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sU1-Nu-lac" id="Tf9-wu-YST">
-                                            <frame key="frameInset" width="139" height="43"/>
+                                            <frame key="frameInset" width="198" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
